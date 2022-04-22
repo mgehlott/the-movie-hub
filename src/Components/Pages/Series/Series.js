@@ -1,6 +1,6 @@
 
 const Series = () => {
 
-    return <div>Series</div>
+    return <div className="pagetitle">Series</div>
 }
 export default Series;
