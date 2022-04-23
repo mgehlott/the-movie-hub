@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import MoviesList from "../../../MoviesAndSeries/MoviesList";
 import styles from "./Trending.module.css";
 import CustomPagination from "../../Pagination/CustomPagination";
+import { API_KEY } from '../../../File';
 
 
 
@@ -10,9 +11,12 @@ import CustomPagination from "../../Pagination/CustomPagination";
 const Trending = () => {
     const [content, setContent] = useState([]);
     const [page, setPage] = useState(1);
+    console.log(API_KEY + " is apiii");
 
     const fetchData = async () => {
-        const { data } = await axios.get(`https://api.themoviedb.org/3/trending/all/day?api_key=7f21e2ac2d9437374830cd068e43b8e0&page=${page}`);
+        const url = `https://api.themoviedb.org/3/trending/all/day?api_key=${API_KEY}&page=${page}`
+
+        const { data } = await axios.get(url);
         setContent(data.results);
     }
 
