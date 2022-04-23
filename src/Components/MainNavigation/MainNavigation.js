@@ -22,7 +22,7 @@ export default function SimpleBottomNavigation() {
             <BottomNavigation
                 style={{
                     backgroundColor: '#2d313a',
-                    zIndex: 100,
+                    zIndex: 200,
                     color: 'white'
                 }}
                 showLabels

@@ -5,7 +5,7 @@ import { Badge } from '@mui/material';
 
 export default function SingleMovie({
     id, poster, title, date, vote, media_type }) {
-    console.log(title);
+    // console.log(title);
     return (
         <div className={styles.media} >
             <Badge badgeContent={vote} color={vote > 6 ? "primary" : "secondary"} />
