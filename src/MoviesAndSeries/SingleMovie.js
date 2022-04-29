@@ -2,12 +2,13 @@ import React from 'react';
 import styles from './SingleMovie.module.css';
 import { img_300, unavailable } from '../Config/Config';
 import { Badge } from '@mui/material';
+import ContentModal from '../Components/ContentlModal/ContentModal';
 
 export default function SingleMovie({
     id, poster, title, date, vote, media_type }) {
     // console.log(title);
     return (
-        <div className={styles.media} >
+        <ContentModal media_type={media_type} id={id}  >
             <Badge badgeContent={vote} color={vote > 6 ? "primary" : "secondary"} />
             <img className={styles.poster} src={poster ? `${img_300}${poster}` : unavailable} alt={title} />
             <b className={styles.title}>{title}</b>
@@ -18,6 +19,6 @@ export default function SingleMovie({
                 </span>
             </span>
 
-        </div>
+        </ContentModal>
     )
 }

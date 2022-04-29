@@ -9,10 +9,14 @@ import Movies from './Components/Pages/Movies/Movies';
 import Series from './Components/Pages/Series/Series';
 import Search from './Components/Pages/Search/Search';
 
+
+
+
 function App() {
   return (
     <>
       <Header />
+
       <div className={styles.app}>
         <Container>
           <Routes>

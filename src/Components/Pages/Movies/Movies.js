@@ -7,6 +7,7 @@ import styles from '../Trending/Trending.module.css';
 import Genres from "../../Genres/Genres";
 import useGenres from '../../../hooks/useGenres';
 
+
 const Movies = () => {
 
     const [content, setContent] = useState([]);
@@ -26,7 +27,7 @@ const Movies = () => {
     }
 
     useEffect(() => {
-        fetchData();
+        fetchData(); // eslint-disable-next-line
     }, [page, genresForUrl])
 
     return <>
@@ -39,9 +40,10 @@ const Movies = () => {
             setPage={setPage}
         />
 
+
         <div className={styles.trending}>
 
-            {content && <MoviesList data={content} />}
+            {content && <MoviesList data={content} type="movie" />}
         </div>
         <CustomPagination setPage={setPage} numOfPages={numPage} />
     </>

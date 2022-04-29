@@ -41,7 +41,7 @@ const Series = () => {
 
         <div className={styles.trending}>
 
-            {content && <MoviesList data={content} />}
+            {content && <MoviesList data={content} type='tv' />}
         </div>
         <CustomPagination setPage={setPage} numOfPages={numPage} />
     </>

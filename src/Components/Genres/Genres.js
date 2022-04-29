@@ -42,7 +42,7 @@ function Genres({ type, selectedGenre, setSeletedGenre, allGenre, setAllGenre, s
   return (
     <div style={{ pading: '6px 0', margin: '10px 0' }}>
 
-      {console.log(selectedGenre)}
+
       {selectedGenre &&
         selectedGenre.map((genre) => {
           return <Chip

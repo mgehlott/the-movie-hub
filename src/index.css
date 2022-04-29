@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&family=Roboto:wght@300;400&family=Satisfy&display=swap');
-
+@import "react-alice-carousel/lib/alice-carousel.css";
 
 body {
   margin: 0;
@@ -32,4 +32,8 @@ body {
   .pagetitle{
     font-size: 6.3vw;
   }
+}
+
+.loader{
+  text-align: center;
 }
