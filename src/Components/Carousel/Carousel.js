@@ -45,7 +45,7 @@ const Carousel = ({ id, media_type }) => {
     }
 
     useEffect(() => {
-        fetchData();
+        fetchData(); // eslint-disable-next-line
     }, []);
 
     return (
