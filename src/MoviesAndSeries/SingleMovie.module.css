@@ -14,8 +14,7 @@
 .media:hover{
     background-color: white;
     color: black;
-    height: 375px;
-    width: 215px;
+    
 }
 
 @media(max-width:500px)
@@ -23,6 +22,7 @@
     .media{
         width: 46%;
     }
+    
 }
 
 .poster{
